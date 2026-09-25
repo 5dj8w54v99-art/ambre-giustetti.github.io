@@ -1,0 +1,255 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permet au site de s'adapter aux téléphones et tablettes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio d'Ambre Giustetti, étudiante en école de commerce.">
+
+    <title>Ambre Giustetti | Portfolio</title>
+
+    <!-- Lien vers notre fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         EN-TÊTE ET NAVIGATION
+         ========================= -->
+
+    <header class="header">
+        <nav class="nav container" aria-label="Navigation principale">
+
+            <!-- Nom affiché en haut de la page -->
+            <a href="#" class="logo">Ambre Giustetti</a>
+
+            <!-- Liens vers les différentes parties de la page -->
+            <div class="nav-links">
+                <a href="#profil">Profil</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             PRÉSENTATION
+             ========================= -->
+
+        <section class="hero container" id="profil">
+
+            <div class="hero-text">
+
+                <p class="tag">Étudiante en école de commerce</p>
+
+                <h1>Bonjour, je suis Ambre Giustetti.</h1>
+
+                <p class="intro">
+                    Étudiante en école de commerce, je m'intéresse au
+                    marketing, à la gestion de projet et au développement
+                    commercial. Curieuse et motivée, je souhaite développer
+                    mes compétences à travers de nouvelles expériences
+                    professionnelles.
+                </p>
+
+                <a href="#contact" class="button">
+                    Me contacter
+                </a>
+
+            </div>
+
+
+            <!--
+                EMPLACEMENT DE LA PHOTO
+
+                Place ta photo dans le même dossier que index.html
+                et appelle-la "photo-profil.jpg".
+            -->
+
+            <div class="photo-container">
+
+                <img
+                    src="photo-profil.jpg"
+                    alt="Photo professionnelle d'Ambre Giustetti"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMPÉTENCES
+             ========================= -->
+
+        <section class="section container" id="competences">
+
+            <p class="tag">Mon profil</p>
+
+            <h2>Mes compétences</h2>
+
+            <div class="skills">
+
+                <!-- Compétence 1 -->
+                <article class="card">
+                    <h3>Marketing</h3>
+
+                    <p>
+                        Création de contenus, analyse de marché et réflexion
+                        autour de stratégies marketing.
+                    </p>
+                </article>
+
+
+                <!-- Compétence 2 -->
+                <article class="card">
+                    <h3>Gestion de projet</h3>
+
+                    <p>
+                        Organisation des tâches, respect des délais et
+                        coordination d'un travail en équipe.
+                    </p>
+                </article>
+
+
+                <!-- Compétence 3 -->
+                <article class="card">
+                    <h3>Analyse</h3>
+
+                    <p>
+                        Analyse de données et utilisation d'outils comme
+                        Excel pour faciliter la prise de décision.
+                    </p>
+                </article>
+
+
+                <!-- Compétence 4 -->
+                <article class="card">
+                    <h3>Communication</h3>
+
+                    <p>
+                        Communication écrite et orale, présentation de projets
+                        et travail en équipe.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJETS
+             ========================= -->
+
+        <section class="projects-section" id="projets">
+
+            <div class="container section">
+
+                <p class="tag">Expériences académiques</p>
+
+                <h2>Mes projets</h2>
+
+                <div class="projects">
+
+                    <!-- Projet 1 -->
+                    <article class="project">
+
+                        <span>Projet 01</span>
+
+                        <h3>Étude marketing</h3>
+
+                        <p>
+                            Réalisation d'une étude de marché pour une marque
+                            fictive : analyse des concurrents, identification
+                            de la cible et proposition d'une stratégie marketing.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Projet 2 -->
+                    <article class="project">
+
+                        <span>Projet 02</span>
+
+                        <h3>Business plan</h3>
+
+                        <p>
+                            Travail en équipe autour de la création d'une
+                            entreprise fictive avec étude financière,
+                            stratégie commerciale et présentation du projet.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+             ========================= -->
+
+        <section class="contact container" id="contact">
+
+            <p class="tag">Contact</p>
+
+            <h2>Échangeons ensemble.</h2>
+
+            <p>
+                Vous souhaitez en savoir plus sur mon parcours ou échanger
+                au sujet d'une opportunité ?
+            </p>
+
+            <!--
+                Remplace l'adresse ci-dessous par ton adresse email.
+            -->
+
+            <a
+                href="mailto:ambre.giustetti@email.com"
+                class="button"
+            >
+                Me contacter par email
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIED DE PAGE
+         ========================= -->
+
+    <footer class="footer">
+
+        <p>
+            © <span id="year"></span> Ambre Giustetti
+        </p>
+
+    </footer>
+
+
+    <!--
+        Le JavaScript est chargé à la fin de la page.
+    -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
