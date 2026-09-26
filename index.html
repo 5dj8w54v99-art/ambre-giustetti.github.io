@@ -1,255 +1,172 @@
 ```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-
-    <!-- Permet au site de s'adapter aux téléphones et tablettes -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Portfolio d'Ambre Giustetti, étudiante en école de commerce.">
-
-    <title>Ambre Giustetti | Portfolio</title>
-
-    <!-- Lien vers notre fichier CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
 </head>
 
 <body>
 
-    <!-- =========================
-         EN-TÊTE ET NAVIGATION
-         ========================= -->
+  <!-- Décoration -->
+  <div class="rose rose-1">🌹</div>
+  <div class="rose rose-2">🌹</div>
+  <div class="rose rose-3">🌹</div>
+  <div class="rose rose-4">🌹</div>
 
-    <header class="header">
-        <nav class="nav container" aria-label="Navigation principale">
+  <!-- En-tête -->
+  <header class="hero">
 
-            <!-- Nom affiché en haut de la page -->
-            <a href="#" class="logo">Ambre Giustetti</a>
+    <div class="photo-container">
+      <div class="rose-ring"></div>
+      <img src="photo-profil.jpg" alt="Photo de profil">
+    </div>
 
-            <!-- Liens vers les différentes parties de la page -->
-            <div class="nav-links">
-                <a href="#profil">Profil</a>
-                <a href="#competences">Compétences</a>
-                <a href="#projets">Projets</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <div class="presentation">
+      <p class="small-title">BIENVENUE SUR MON PORTFOLIO</p>
 
-        </nav>
-    </header>
+      <h1>Ambre Giustetti</h1>
 
+      <p class="intro">
+        Étudiante en économie et gestion, actuellement à SKEMA Business School à Lille.
+      </p>
 
-    <main>
+      <a href="#parcours" class="button">Découvrir mon parcours</a>
+    </div>
 
-        <!-- =========================
-             PRÉSENTATION
-             ========================= -->
+  </header>
 
-        <section class="hero container" id="profil">
 
-            <div class="hero-text">
+  <!-- À propos -->
+  <section class="section about">
 
-                <p class="tag">Étudiante en école de commerce</p>
+    <p class="section-title">À PROPOS DE MOI</p>
 
-                <h1>Bonjour, je suis Ambre Giustetti.</h1>
+    <h2>Qui suis-je ?</h2>
 
-                <p class="intro">
-                    Étudiante en école de commerce, je m'intéresse au
-                    marketing, à la gestion de projet et au développement
-                    commercial. Curieuse et motivée, je souhaite développer
-                    mes compétences à travers de nouvelles expériences
-                    professionnelles.
-                </p>
+    <p>
+      Je suis une étudiante intéressée par le monde de l'économie,
+      de la gestion et du commerce. Mon parcours scolaire m'a permis
+      de développer ma curiosité, mon autonomie et mon envie
+      d'apprendre de nouvelles choses.
+    </p>
 
-                <a href="#contact" class="button">
-                    Me contacter
-                </a>
+  </section>
 
-            </div>
 
+  <!-- Parcours scolaire -->
+  <section class="section" id="parcours">
 
-            <!--
-                EMPLACEMENT DE LA PHOTO
+    <p class="section-title">MON PARCOURS</p>
 
-                Place ta photo dans le même dossier que index.html
-                et appelle-la "photo-profil.jpg".
-            -->
+    <h2>Parcours scolaire</h2>
 
-            <div class="photo-container">
+    <div class="timeline">
 
-                <img
-                    src="photo-profil.jpg"
-                    alt="Photo professionnelle d'Ambre Giustetti"
-                >
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>LYCÉE</span>
+          <h3>Lycée Notre-Dame</h3>
+          <p>Valenciennes</p>
+        </div>
+      </div>
 
-            </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>1ÈRE ANNÉE</span>
+          <h3>ESDHEM</h3>
+          <p>Licence Économie et Gestion</p>
+        </div>
+      </div>
 
-        </section>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>2ÈME ANNÉE</span>
+          <h3>ESDHEM</h3>
+          <p>Licence Économie et Gestion</p>
+        </div>
+      </div>
 
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span>ACTUELLEMENT</span>
+          <h3>SKEMA Business School</h3>
+          <p>Lille</p>
+        </div>
+      </div>
 
-        <!-- =========================
-             COMPÉTENCES
-             ========================= -->
+    </div>
 
-        <section class="section container" id="competences">
+  </section>
 
-            <p class="tag">Mon profil</p>
 
-            <h2>Mes compétences</h2>
+  <!-- Centres d'intérêts -->
+  <section class="section interests">
 
-            <div class="skills">
+    <p class="section-title">MES PASSIONS</p>
 
-                <!-- Compétence 1 -->
-                <article class="card">
-                    <h3>Marketing</h3>
+    <h2>Mes centres d'intérêts</h2>
 
-                    <p>
-                        Création de contenus, analyse de marché et réflexion
-                        autour de stratégies marketing.
-                    </p>
-                </article>
+    <div class="interest-container">
 
-
-                <!-- Compétence 2 -->
-                <article class="card">
-                    <h3>Gestion de projet</h3>
-
-                    <p>
-                        Organisation des tâches, respect des délais et
-                        coordination d'un travail en équipe.
-                    </p>
-                </article>
-
-
-                <!-- Compétence 3 -->
-                <article class="card">
-                    <h3>Analyse</h3>
-
-                    <p>
-                        Analyse de données et utilisation d'outils comme
-                        Excel pour faciliter la prise de décision.
-                    </p>
-                </article>
-
-
-                <!-- Compétence 4 -->
-                <article class="card">
-                    <h3>Communication</h3>
-
-                    <p>
-                        Communication écrite et orale, présentation de projets
-                        et travail en équipe.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJETS
-             ========================= -->
-
-        <section class="projects-section" id="projets">
-
-            <div class="container section">
-
-                <p class="tag">Expériences académiques</p>
-
-                <h2>Mes projets</h2>
-
-                <div class="projects">
-
-                    <!-- Projet 1 -->
-                    <article class="project">
-
-                        <span>Projet 01</span>
-
-                        <h3>Étude marketing</h3>
-
-                        <p>
-                            Réalisation d'une étude de marché pour une marque
-                            fictive : analyse des concurrents, identification
-                            de la cible et proposition d'une stratégie marketing.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Projet 2 -->
-                    <article class="project">
-
-                        <span>Projet 02</span>
-
-                        <h3>Business plan</h3>
-
-                        <p>
-                            Travail en équipe autour de la création d'une
-                            entreprise fictive avec étude financière,
-                            stratégie commerciale et présentation du projet.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-             ========================= -->
-
-        <section class="contact container" id="contact">
-
-            <p class="tag">Contact</p>
-
-            <h2>Échangeons ensemble.</h2>
-
-            <p>
-                Vous souhaitez en savoir plus sur mon parcours ou échanger
-                au sujet d'une opportunité ?
-            </p>
-
-            <!--
-                Remplace l'adresse ci-dessous par ton adresse email.
-            -->
-
-            <a
-                href="mailto:ambre.giustetti@email.com"
-                class="button"
-            >
-                Me contacter par email
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         PIED DE PAGE
-         ========================= -->
-
-    <footer class="footer">
-
+      <div class="interest-card">
+        <div class="interest-icon">🏃‍♀️</div>
+        <h3>Course à pied</h3>
         <p>
-            © <span id="year"></span> Ambre Giustetti
+          Un sport qui m'aide à me dépasser et à garder
+          une bonne discipline au quotidien.
         </p>
+      </div>
 
-    </footer>
+      <div class="interest-card">
+        <div class="interest-icon">🐴</div>
+        <h3>Équitation</h3>
+        <p>
+          Une passion qui m'a appris la patience,
+          la confiance et la persévérance.
+        </p>
+      </div>
+
+      <div class="interest-card">
+        <div class="interest-icon">💪</div>
+        <h3>Musculation</h3>
+        <p>
+          Une activité qui me permet de travailler
+          ma régularité et de repousser mes limites.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <!--
-        Le JavaScript est chargé à la fin de la page.
-    -->
-    <script src="script.js"></script>
+  <!-- Phrase finale -->
+  <section class="quote">
+
+    <div class="quote-rose">🌹</div>
+
+    <p>
+      « Chaque expérience est une nouvelle étape
+      vers ce que l'on souhaite devenir. »
+    </p>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Ambre Giustetti — Mon Portfolio</p>
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
 ```
+
