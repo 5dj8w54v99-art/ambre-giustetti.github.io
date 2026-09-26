@@ -1,172 +1,261 @@
 ```html
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+
+  <title>Portfolio - Ambre Giustetti</title>
+
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Décoration -->
-  <div class="rose rose-1">🌹</div>
-  <div class="rose rose-2">🌹</div>
-  <div class="rose rose-3">🌹</div>
-  <div class="rose rose-4">🌹</div>
+  <!-- =========================
+       EN-TÊTE
+       ========================= -->
 
-  <!-- En-tête -->
-  <header class="hero">
-
-    <div class="photo-container">
-      <div class="rose-ring"></div>
-      <img src="photo-profil.jpg" alt="Photo de profil">
-    </div>
-
-    <div class="presentation">
-      <p class="small-title">BIENVENUE SUR MON PORTFOLIO</p>
-
+  <header>
+    <nav>
       <h1>Ambre Giustetti</h1>
 
-      <p class="intro">
-        Étudiante en économie et gestion, actuellement à SKEMA Business School à Lille.
-      </p>
-
-      <a href="#parcours" class="button">Découvrir mon parcours</a>
-    </div>
-
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#interets">Intérêts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
 
-  <!-- À propos -->
-  <section class="section about">
+  <main>
 
-    <p class="section-title">À PROPOS DE MOI</p>
+    <!-- =========================
+         PRÉSENTATION
+         ========================= -->
 
-    <h2>Qui suis-je ?</h2>
+    <section id="about" class="hero">
 
-    <p>
-      Je suis une étudiante intéressée par le monde de l'économie,
-      de la gestion et du commerce. Mon parcours scolaire m'a permis
-      de développer ma curiosité, mon autonomie et mon envie
-      d'apprendre de nouvelles choses.
-    </p>
+      <div class="hero-text">
 
-  </section>
+        <p class="intro">Étudiante en école de commerce</p>
+
+        <h2>Bonjour, je suis Ambre.</h2>
+
+        <p class="description">
+          Étudiante en économie-gestion, je m'intéresse particulièrement
+          au marketing, au commerce et à la gestion de projets.
+          Je souhaite développer mes compétences dans un environnement
+          dynamique et international.
+        </p>
+
+        <a href="#contact" class="button">Me contacter</a>
+
+      </div>
+
+      <!-- Photo -->
+      <img src="photo-profil.jpg" alt="Photo de Ambre">
+
+    </section>
 
 
-  <!-- Parcours scolaire -->
-  <section class="section" id="parcours">
+    <!-- =========================
+         PARCOURS SCOLAIRE
+         ========================= -->
 
-    <p class="section-title">MON PARCOURS</p>
+    <section id="parcours">
 
-    <h2>Parcours scolaire</h2>
+      <h2>Mon parcours scolaire</h2>
 
-    <div class="timeline">
+      <div class="cards">
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span>LYCÉE</span>
+        <article class="card">
+          <h3>Licence Économie-Gestion</h3>
+          <p>ESDHEM - SKEMA Business School, Lille</p>
+        </article>
+
+        <article class="card">
           <h3>Lycée Notre-Dame</h3>
           <p>Valenciennes</p>
+        </article>
+
+        <article class="card">
+          <h3>Collège Notre-Dame</h3>
+          <p>Valenciennes</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPÉRIENCES PROFESSIONNELLES
+         ========================= -->
+
+    <section id="experiences">
+
+      <h2>Mes expériences professionnelles</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Stagiaire en DAF</h3>
+          <p>Champagne GUEUSQUIN</p>
+          <p>
+           Organisation de réunions,comphréhension d'une entreprise
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Animatrice</h3>
+          <p>Colonie de vacances</p>
+          <p>
+            Encadrement des enfants, organisation d'activités
+            et travail en équipe.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Stage en cabinet d'avocat</h3>
+          <p>
+            Découverte du fonctionnement d'un cabinet et
+            du monde professionnel.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         COMPÉTENCES
+         ========================= -->
+
+    <section id="skills">
+
+      <h2>Mes compétences</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Marketing</h3>
+          <p>Compréhension des bases du marketing et de la communication.</p>
+        </article>
+
+        <article class="card">
+          <h3>Communication</h3>
+          <p>Aisance à l'oral et capacité à présenter un projet.</p>
+        </article>
+
+        <article class="card">
+          <h3>Travail en équipe</h3>
+          <p>Capacité à collaborer et à participer à des projets collectifs.</p>
+        </article>
+
+        <article class="card">
+          <h3>Organisation</h3>
+          <p>Gestion des priorités et organisation du travail.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJETS
+         ========================= -->
+
+    <section id="projects">
+
+      <h2>Mes projets</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Projet marketing</h3>
+          <p>
+            Réalisation d'un projet de groupe autour de l'analyse
+            d'une entreprise et de sa stratégie marketing.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Projet associatif</h3>
+          <p>
+            Participation à un projet collectif nécessitant
+            organisation, communication et travail en équipe.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CENTRES D'INTÉRÊT
+         ========================= -->
+
+    <section id="interets">
+
+      <h2>Mes centres d'intérêt</h2>
+
+      <div class="interest-container">
+
+        <div class="interest">
+          <h3>Voyages</h3>
+          <p>Découvrir de nouvelles cultures et de nouveaux horizons.</p>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span>1ÈRE ANNÉE</span>
-          <h3>ESDHEM</h3>
-          <p>Licence Économie et Gestion</p>
+        <div class="interest">
+          <h3>Musique</h3>
+          <p>Écouter et découvrir différents styles musicaux.</p>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span>2ÈME ANNÉE</span>
-          <h3>ESDHEM</h3>
-          <p>Licence Économie et Gestion</p>
+        <div class="interest">
+          <h3>Mode</h3>
+          <p>Suivre les tendances et développer mon style personnel.</p>
         </div>
+
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <span>ACTUELLEMENT</span>
-          <h3>SKEMA Business School</h3>
-          <p>Lille</p>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
+    </section>
 
 
-  <!-- Centres d'intérêts -->
-  <section class="section interests">
+    <!-- =========================
+         CONTACT
+         ========================= -->
 
-    <p class="section-title">MES PASSIONS</p>
+    <section id="contact" class="contact">
 
-    <h2>Mes centres d'intérêts</h2>
+      <h2>Me contacter</h2>
 
-    <div class="interest-container">
+      <p>
+        Vous souhaitez échanger avec moi à propos d'une opportunité ?
+      </p>
 
-      <div class="interest-card">
-        <div class="interest-icon">🏃‍♀️</div>
-        <h3>Course à pied</h3>
-        <p>
-          Un sport qui m'aide à me dépasser et à garder
-          une bonne discipline au quotidien.
-        </p>
-      </div>
+      <a href="ambre.giustetti@icloud.com" class="button">
+        Envoyer un email
+      </a>
 
-      <div class="interest-card">
-        <div class="interest-icon">🐴</div>
-        <h3>Équitation</h3>
-        <p>
-          Une passion qui m'a appris la patience,
-          la confiance et la persévérance.
-        </p>
-      </div>
+    </section>
 
-      <div class="interest-card">
-        <div class="interest-icon">💪</div>
-        <h3>Musculation</h3>
-        <p>
-          Une activité qui me permet de travailler
-          ma régularité et de repousser mes limites.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
+  </main>
 
 
-  <!-- Phrase finale -->
-  <section class="quote">
+  <!-- =========================
+       PIED DE PAGE
+       ========================= -->
 
-    <div class="quote-rose">🌹</div>
-
-    <p>
-      « Chaque expérience est une nouvelle étape
-      vers ce que l'on souhaite devenir. »
-    </p>
-
-  </section>
-
-
-  <footer>
-    <p>© 2026 Ambre Giustetti — Mon Portfolio</p>
-  </footer>
-
-
-  <script src="script.js"></script>
-
-</body>
-</html>
+  <fo
 ```
 
